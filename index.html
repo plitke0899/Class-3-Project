@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zap Map 2024</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="header">
+            <span class="lightning-emoji">⚡</span>
+            <h1>NYC Zap Map</h1>
+        </div>
+        <p>Welcome to Zap Map! These sites collect e-waste for recycling to keep it out of landfills, where it can start fires, pollute the environment, and waste scarce minerals</p>
+        <p>Note: some but not all of these sites accept batteries - consult the link below for more.</p>
+        <p><strong>Click the markers to compare each site!</strong></p>
+        <div class="legend">
+            <div>
+                <span class="legend-key" style="background-color: #223cea;"></span>
+                <span>Business</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #dd2588;"></span>
+                <span>Nonprofit</span>
+            </div>
+            <div>
+                <span class="legend-key" style="background-color: #096543;"></span>
+                <span>Public Facility</span>
+            </div>
+        </div>
+        <a class="battery-link" href="https://www.call2recycle.org/locator/">Battery Sites</a>
+    </div>
+    <div id="map-container"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+    <script src="js/ewasteData.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
